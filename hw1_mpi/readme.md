@@ -51,7 +51,7 @@ mpirun -np 4 hw1_2 > 1_2out.txt
 
 ##### 2.1 multiplication
 `multiplication_matrix_matrix` function:  
-* divide rows of left matrix with n blocks(e.g. 1024 rows, 4 processors - processor 1: 1~256rows; processor 2: 257~512rows; processor 3: 513~768rows; processor 4: 769~1024rows).
+* divide rows of left matrix with n blocks(e.g. 1024 rows, 4 processors - processor 1: 1 ~ 256rows; processor 2: 257 ~ 512rows; processor 3: 513 ~ 768rows; processor 4: 769 ~ 1024rows).
 * If rows can not divide by processor number, the left rows will be computed by root processor 0, and add the results to `outmatrix`
 
 ##### 2.2 pooling
@@ -66,7 +66,7 @@ mpirun -np 4 hw1_2 > 1_2out.txt
 
 ##### 2.3 convolution
 `convolution` function:
-* bcast the matrix and divide the rows tasks with n blocks(e.g. 1024 rows, 4 processors - processor 1: 1~256rows; processor 2: 257~512rows; processor 3: 513~768rows; processor 4: 769~1024rows), compute sub_matrix * weight at same positon and sum all with given kernel, stripe  
+* bcast the matrix and divide the rows tasks with n blocks(e.g. 1024 rows, 4 processors - processor 1: 1 ~ 256rows; processor 2: 257 ~ 512rows; processor 3: 513 ~ 768rows; processor 4: 769 ~ 1024rows), compute sub_matrix * weight at same positon and sum all with given kernel, stripe  
 
 `get_sub_matrix_mult_weight_sum` function:  
 * compute sub_matrix * weight with kernel size(4x4) at same positon and sum all
