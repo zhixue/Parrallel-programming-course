@@ -2,6 +2,7 @@
 
 Homework 1  
 </h2>
+
 ## Problem 1
 > MPI programming:  
 Use MPI_SEND and MPI_RECV to implement the MPI_ALLGATHER function, and compare the performance of your implementation and the original MPI implementation.  
