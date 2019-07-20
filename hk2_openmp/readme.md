@@ -2,7 +2,8 @@
 
 Homework 2  
 
-018080910011 hongzhang xue</h2>
+</h2>
+
 ## Problem 1
 > OpenMP programming:  
 Using OpenMP to implement the Monte Carlo algorithm.
