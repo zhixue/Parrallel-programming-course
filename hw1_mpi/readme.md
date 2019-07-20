@@ -1,8 +1,7 @@
 <h2 style="text-align:center">Parallel computing and parallel algorithm 
 
 Homework 1  
-
-018080910011 hongzhang xue</h2>
+</h2>
 ## Problem 1
 > MPI programming:  
 Use MPI_SEND and MPI_RECV to implement the MPI_ALLGATHER function, and compare the performance of your implementation and the original MPI implementation.  
