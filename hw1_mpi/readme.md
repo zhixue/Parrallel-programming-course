@@ -56,7 +56,7 @@ mpirun -np 4 hw1_2 > 1_2out.txt
 
 ##### 2.2 pooling
 `max_pooling` function:  
-* bcast the matrix and divide the rows tasks with n blocks(e.g. 1024 rows, 4 processors - processor 1: 1~256rows; processor 2: 257~512rows; processor 3: 513~768rows; processor 4: 769~1024rows), compute the max number of sub_matrix with given kernel, stripe
+* bcast the matrix and divide the rows tasks with n blocks(e.g. 1024 rows, 4 processors - processor 1: 1 ~ 256rows; processor 2: 257 ~ 512rows; processor 3: 513 ~ 768rows; processor 4: 769 ~ 1024rows), compute the max number of sub_matrix with given kernel, stripe
 * If rows can not divide by processor number, the left rows will be computed by root processor 0, and add the results to `out_matrix`
 
 `get_sub_matrix_max` function:
